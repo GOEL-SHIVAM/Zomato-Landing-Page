@@ -115,7 +115,6 @@
   .input_container_location,
   .input_container_search {
     padding: 15px;
-    border-radius: 15px;
     width: 95px;
     overflow: hidden;
   }
@@ -442,4 +441,57 @@ link__container h5 {
 
 .footer__link:hover {
   color: black;
+}
+
+.social__link__container button {
+  background-color: black;
+  color: white;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+
+.social__link__container button i {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__section_logo {
+  width: 100%;
+}
+
+.disclaimer {
+  width: 90%;
+  margin: auto;
+  color: gray;
+  border-top: 1px solid gray;
+  padding: 1.5rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .navigation_container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .navigation_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 200px) {
+  .navigation_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .footer_section1 {
+    gap: 20px;
+  }
 }
